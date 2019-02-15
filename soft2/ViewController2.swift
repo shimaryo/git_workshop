@@ -20,7 +20,7 @@ class ViewController2: UIViewController, UITextFieldDelegate{
     
     var testText: String = "入力してください"
     
-    //インスタアンス生成
+    //インスタンス生成
     let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
