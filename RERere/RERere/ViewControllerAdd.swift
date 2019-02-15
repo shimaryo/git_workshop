@@ -1,8 +1,9 @@
 
 import UIKit
 
-    var List_name = [String()]
-    var List_time = [String()]
+    var List_name = [String]()
+    var List_time = [String]()
+    var countadd = [Int]()
 class ViewControllerAdd: UIViewController, UITextFieldDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
     
 
@@ -16,7 +17,7 @@ class ViewControllerAdd: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
         // Delegate設定
         pickerView.delegate = self
         pickerView.dataSource = self
-        label.text = ""
+        label.text = "月1"
         
         lecuture_name.text=""
         
@@ -44,6 +45,7 @@ class ViewControllerAdd: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
         self.performSegue(withIdentifier: "adddata", sender: nil)
         List_name.append(lecuture_name.text!)
         List_time.append(label.text!)
+        countadd.append(0)
     }
 }
 
