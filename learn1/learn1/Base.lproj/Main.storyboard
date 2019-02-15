@@ -127,7 +127,7 @@
         <!--View Controller-->
         <scene sceneID="XRn-ta-ZaO">
             <objects>
-                <viewController id="abc-EA-7Us" sceneMemberID="viewController">
+                <viewController id="abc-EA-7Us" customClass="ViewController" customModule="learn1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CIh-0Q-XpH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +150,18 @@
                                 <state key="normal" title="出席管理">
                                     <color key="titleColor" red="0.0" green="0.2815030385536747" blue="0.95523184537887573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aS8-CV-2zJ" kind="show" id="xLL-Hz-yTR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AQ-kq-vGC">
+                                <rect key="frame" x="282" y="644" width="205" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="setNotification:" destination="abc-EA-7Us" eventType="touchUpInside" id="xqN-oL-9DR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78889596094323378" green="1" blue="0.63798990203181694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -161,10 +173,18 @@
             </objects>
             <point key="canvasLocation" x="1406.25" y="133.59375"/>
         </scene>
+        <!--Main2-->
+        <scene sceneID="LTz-75-McJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main2" id="aS8-CV-2zJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqN-Pf-fhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="548"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cOm-Og-udj"/>
-        <segue reference="oCV-dY-GDD"/>
+        <segue reference="9pJ-z3-TBT"/>
+        <segue reference="mf8-1H-Sbk"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
